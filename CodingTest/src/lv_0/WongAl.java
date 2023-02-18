@@ -30,38 +30,25 @@
 //네 가지를 붙여 만들 수 있는 발음 이외에는 어떤 발음도 할 수 없는 것으로 규정합니다.
 //예를 들어 "woowo"는 "woo"는 발음할 수 있지만 "wo"를 발음할 수 없기 때문에 할 수 없는 발음입니다.
 package lv_0;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 
 public class WongAl {
 public static void main(String[] args) {
 
+	
+	
+// String은 기본형(프리미티브타입)이 아니다. 그래서 비교연산을 할때 == 이게 아닌
+// String클래스에서 공하는 equels를 써서 일치하는지 비교해야한다.
+	
 	String[] babbling = {"aya", "yee", "u", "maa", "wyeoo"};
 	int result = 0;
 	
-//	String patternStr = "aya|ye|woo|ma";
-	
-	String str = "ayaaa";
-	
 	for (int i = 0; i < babbling.length; i += 1) {
 		String rex = babbling[i].replaceAll("aya|ye|woo|ma", "0");
-		if(rex == "0" || exp == "00" || exp == "000" || exp == "0000" || exp == "00000"); {
-			
+		if(rex.equals("0") || rex.equals("00") || rex.equals("000") || rex.equals("0000") || rex.equals("00000")){
+		 result += 1;
+		 
 		}
 	}
-			
-	
-	
-//	int answer = 0;
-//	
-//	Pattern pattern = Pattern.compile(patternStr);
-//	
-//	Matcher matcher = pattern.matcher(babbling);
-//	
-//    System.out.println(matcher);
-	
-	
-	
+	System.out.println(result);
  }
 }

@@ -1,0 +1,13 @@
+package lv_0;
+
+public class WatermelonRepeat {
+
+    public String solution(int n) {
+        String answer = "";
+        String subak = "수박";
+        String re = subak.repeat(n);
+        answer = re.substring(0, n);
+        return answer;
+    }
+	
+}

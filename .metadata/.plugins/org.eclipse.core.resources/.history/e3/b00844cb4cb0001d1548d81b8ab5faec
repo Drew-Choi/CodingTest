@@ -1,0 +1,14 @@
+package lv_0;
+
+public class StrlitLength {
+
+	public static void main(String[] args) {
+
+		String[] strlist = {"We", "are", "the", "world!"};
+		
+		System.out.println(strlist[1].length());
+		
+		
+	}
+
+}

@@ -1,0 +1,20 @@
+package lv_0;
+import java.util.*;
+
+public class StrlitLength {
+
+	public static void main(String[] args) {
+
+		String[] strlist = {"We", "are", "the", "world!"};
+		
+		int[] answer = new int{};
+
+		for (int i = 0; i < strlist.length; i += 1) {
+			answer[i] = strlist[i].length();
+		}
+		
+		System.out.println(Arrays.toString(answer));
+		
+	}
+
+}

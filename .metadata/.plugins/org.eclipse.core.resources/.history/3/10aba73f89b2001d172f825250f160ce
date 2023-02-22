@@ -1,0 +1,19 @@
+package lv_0;
+
+public class StringRevers {
+
+	public static void main(String[] args) {
+
+		String my_string = "jaron";
+		
+		String answer = "";
+		
+		for (int i = my_string - 1.length(); i >= my_string.length();i -= 1) {
+			answer += my_string.charAt(i);
+		}
+		
+		System.out.println(answer);
+		
+	}
+
+}

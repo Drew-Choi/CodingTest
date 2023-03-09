@@ -1,0 +1,10 @@
+package lv_0;
+
+public class 배열두배만들기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

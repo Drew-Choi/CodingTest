@@ -29,19 +29,13 @@ public class 중앙값구하기 {
 		
 		int answer = 0;
 		int[] array = {9, -1, 0};
-		Arrays.sort(array);
-		float split = array.length / (float)2;
-		int a = Math.round(split) - (int)1;
+		int sortArrr = Arrays.sort(array);
+//		float split = sortArrr.length / (float)2;
+		int a = Math.round(split);
 		
 		answer = array[a];
 		
-		System.out.println(answer);
-		
-	  //짧은 코드->
-		//시프트연산자를 활용한다
-//		
-//		  Arrays.sort(array);
-//	        return array[array.length >> 1];
+		System.out.println(sortArrr);
 
 	}
 

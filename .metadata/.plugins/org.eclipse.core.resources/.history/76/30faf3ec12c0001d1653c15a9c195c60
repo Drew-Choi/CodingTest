@@ -22,26 +22,18 @@ package lv_0;
 //
 //9, -1, 0을 오름차순 정렬하면 -1, 0, 9이고 가장 중앙에 위치하는 값은 0입니다.
 
-import java.util.*;
+
 public class 중앙값구하기 {
 
 	public static void main(String[] args) {
 		
 		int answer = 0;
 		int[] array = {9, -1, 0};
-		Arrays.sort(array);
 		float split = array.length / (float)2;
-		int a = Math.round(split) - (int)1;
+		int a = Math.round(split);
 		
-		answer = array[a];
+		System.out.println(a);
 		
-		System.out.println(answer);
-		
-	  //짧은 코드->
-		//시프트연산자를 활용한다
-//		
-//		  Arrays.sort(array);
-//	        return array[array.length >> 1];
 
 	}
 

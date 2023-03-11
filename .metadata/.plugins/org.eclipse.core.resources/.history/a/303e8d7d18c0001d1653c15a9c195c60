@@ -1,0 +1,10 @@
+package lv_0;
+
+public class 편지_문자열 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
